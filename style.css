@@ -237,6 +237,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   width: 1px;
 }
 
+.center {
+  margin: 0 auto;
+}
+
 /*** Main CSS (Not Reset) ***/
 
 .mainHeader {
@@ -287,13 +291,69 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   }
 }
 
-/* MAIN */
+/* HEADER/HERO */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+.hero__section__header {
+  text-align: center;
+  width: min(40%, 800px);
+  margin-block-end: 2rem;
+  > h2 {
+    margin-block-end: 2rem;
+  }
+}
 
 .hero__section__header__photos {
   display: grid;
+  width: min(80%, 900px);
   grid-template-columns: repeat(6, 1fr);
-  gap: 0;
+  grid-template-rows: repeat(2, 15rem);
+  justify-items: center;
+  align-items: center;
 
-  &:first-child {
+  padding: 1rem;
+  background-color: var(--clr-neutral-100);
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
   }
+
+  > img:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  > img:nth-child(2),
+  img:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  > img:nth-child(4),
+  img:nth-child(5),
+  img:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+/* REGISTER SECTION */
+
+.register {
+  background-color: var(--clr-neutral-100);
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
