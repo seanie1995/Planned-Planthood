@@ -241,6 +241,15 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   margin: 0 auto;
 }
 
+.standardWidth {
+  width: min(90%, 900px);
+}
+
+.basicPadding {
+  padding-block-end: 1rem;
+  padding-inline: 1rem;
+}
+
 /*** Main CSS (Not Reset) ***/
 
 .mainHeader {
@@ -317,7 +326,6 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 .hero__section__header__photos {
   display: grid;
-  width: min(90%, 900px);
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 15rem);
   justify-items: center;
@@ -376,7 +384,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   justify-content: center;
 
   > header > h2 {
-    font-size: clamp();
+    font-size: clamp(1.5rem, 5vw, 2rem);
   }
 }
 
@@ -424,6 +432,81 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 .register__decoration > svg {
   width: 10rem;
   height: 10rem;
+}
+
+/* ALLA VÅRA VÄXTER */
+
+.cardLibrary {
+  > header {
+    text-align: center;
+  }
+}
+
+.cardLibrary__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cardLibrary__grid__card {
+  background-color: var(--clr-neutral-100);
+  > img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.cardLibrary__grid__card__content {
+  > p {
+    font-size: 12px;
+  }
+}
+
+.cardLibrary__grid__card__footer {
+  font-size: 12px;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block-end: 1rem;
+}
+
+.cardAvatar {
+  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50rem;
+  margin-inline-end: 1rem;
+  background-color: var(--clr-neutral-200);
+}
+
+.cardLibrary__grid__card__bubbles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-block-start: 0.5rem;
+
+  > p {
+    font-size: 10px;
+    background-color: var(--clr-flower);
+    padding-inline: 5px;
+    padding-block: 3px;
+    border-radius: 4rem;
+    color: var(--clr-neutral-100);
+
+    &:first-child {
+      background-color: var(--clr-flower);
+    }
+
+    &:nth-child(2) {
+      background-color: var(--clr-edible);
+    }
+
+    &:nth-child(3) {
+      background-color: var(--clr-air);
+    }
+  }
 }
 
 /* MOBILE */
