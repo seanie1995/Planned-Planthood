@@ -481,11 +481,11 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
-
-  align-items: center;
+  align-items: flex-start;
 
   height: 3rem;
   padding-inline: 0.9rem;
+  padding-block-start: 0.4rem;
 
   > p {
     font-size: 10px;
@@ -582,6 +582,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   .register__section__header {
     align-items: center;
   }
+
+  .cardLibrary__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* TABLET */
@@ -608,5 +612,9 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
       grid-column: span 1;
       grid-row: span 1;
     }
+  }
+
+  .cardLibrary__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

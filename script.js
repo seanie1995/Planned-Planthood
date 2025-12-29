@@ -33,9 +33,8 @@ const bubbles = document.querySelectorAll(
   ".cardLibrary__grid__card__bubbles p"
 );
 
-const shuffled = plantCategories.sort(() => Math.random() - 0.5);
-
-bubbles.forEach((p, index) => {
-  p.textContent = shuffled[index];
+bubbles.forEach((p) => {
+  const randomIndex = Math.floor(Math.random() * plantCategories.length);
+  p.textContent = plantCategories[randomIndex];
   p.style.backgroundColor = randomHsl();
 });
