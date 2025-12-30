@@ -705,6 +705,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   .cardLibrary__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .pageFooter__nav {
+    display: none;
+  }
 }
 
 /* TABLET */
