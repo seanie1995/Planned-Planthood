@@ -336,7 +336,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   text-align: center;
   width: min(90%, 500px);
   margin-block-end: 2rem;
-  > h2 {
+  > h1 {
     margin-block-end: 2rem;
   }
 }
@@ -511,7 +511,8 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
     padding-inline: 5px;
     padding-block: 3px;
     border-radius: 4rem;
-    color: var(--clr-neutral-100);
+    color: white;
+    font-weight: var(--fw-600);
   }
 }
 
