@@ -30,7 +30,7 @@ function randomHsl() {
 }
 
 const bubbles = document.querySelectorAll(
-  ".cardLibrary__grid__card__bubbles p"
+  ".cardLibrary__grid__card__bubbles li"
 );
 
 bubbles.forEach((p) => {

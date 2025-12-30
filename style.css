@@ -227,7 +227,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 /*** Utilities ***/
 
-.visually-hidden {
+/* .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -235,6 +235,25 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   position: absolute;
   white-space: nowrap;
   width: 1px;
+
+  
+} */
+
+.visually-hidden {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  transition: top 0.2s ease;
+
+  &:focus,
+  &:focus-visible {
+    top: 0;
+  }
 }
 
 .center {
@@ -483,12 +502,12 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   flex-wrap: wrap;
   gap: 4px;
   align-items: flex-start;
-
+  list-style: none;
   height: 3rem;
   padding-inline: 0.9rem;
   padding-block-start: 0.4rem;
 
-  > p {
+  > li {
     font-size: 10px;
     background-color: var(--clr-flower);
     padding-inline: 5px;
@@ -516,6 +535,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   flex-direction: row;
   align-items: center;
   margin-block-end: 1rem;
+
+  > div > h6 {
+    color: var(--clr-air);
+  }
 }
 
 .cardAvatar {
@@ -635,23 +658,22 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 /* MOBILE */
 
 @media (max-width: 599px) {
+  .mainHeader {
+    justify-content: space-between;
+    padding-inline: 2rem;
+  }
+
   .mainNav__ul {
     display: none;
   }
 
   .mainNav__mobileButton {
     display: block;
-  }
-
-  .mainNav__mobileContainer {
-    display: relative;
-  }
-
-  .mainNav__mobileContainer__menu {
-    display: absolute;
-    list-style: none;
     background-color: var(--clr-neutral-100);
-    padding: 16srem;
+    border: none;
+    > svg {
+      stroke: var(--clr-air);
+    }
   }
 
   .hero__section__header__photos {

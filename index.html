@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <a href="#mainContent" class="visually-hidden"> Skip to main content </a>
+
     <header class="mainHeader">
       <div class="logo">
         <svg
@@ -44,7 +46,7 @@
             height="32"
             viewBox="0 0 24 24"
             stroke-width="2"
-            stroke="currentColor"
+            stroke="none"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -55,14 +57,6 @@
             <line x1="4" y1="18" x2="20" y2="18" />
           </svg>
         </button>
-        <div class="mainNav__mobileContainer">
-          <ul class="mainNav__mobileContainer__menu">
-            <li><a href="/">HEM</a></li>
-            <li><a href="/historik">HISTORIK</a></li>
-            <li><a href="/tips">TIPS</a></li>
-            <li><a href="/kontakt">KONTAKT</a></li>
-          </ul>
-        </div>
       </nav>
     </header>
     <main>
@@ -206,17 +200,18 @@
 
       <!-- ALLA VÅRA VÄXTER/ MAIN GRID -->
 
-      <section class="cardLibrary standardWidth center">
+      <section class="cardLibrary standardWidth center" id="mainContent">
         <header><h2>Alla Våra Växter</h2></header>
         <div class="cardLibrary__grid">
           <!-- CARD  -->
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -245,14 +240,104 @@
               </svg>
               <img
                 src="https://fastly.picsum.photos/id/132/200/200.jpg?hmac=meVrCoOURNB7iKK3Mv-yuRrvxvXgv4h2vIRLM4sKwK4"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="basicPadding cardLibrary__grid__card__content">
+              <header>
+                <h4 class="cardLibrary__grid__card__content__title">
+                  <a href="">Gurka</a>
+                </h4>
+              </header>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
+              </p>
             </div>
+            <footer class="cardLibrary__grid__card__footer">
+              <svg
+                fill="#000000"
+                width="60px"
+                height="60px"
+                viewBox="0 0 36 30"
+                version="1.1"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="cardAvatar"
+              >
+                <title>avatar-solid</title>
+                <path
+                  d="M30.61,24.52a17.16,17.16,0,0,0-25.22,0,1.51,1.51,0,0,0-.39,1v6A1.5,1.5,0,0,0,6.5,33h23A1.5,1.5,0,0,0,31,31.5v-6A1.51,1.51,0,0,0,30.61,24.52Z"
+                  class="clr-i-solid clr-i-solid-path-1"
+                ></path>
+                <circle
+                  cx="18"
+                  cy="10"
+                  r="7"
+                  class="clr-i-solid clr-i-solid-path-2"
+                ></circle>
+                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+              </svg>
+              <div>
+                <h6>Coolio</h6>
+                <p>2024-04-01</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="cardLibrary__grid__card">
+            <div class="cardLibrary__grid__card__img">
+              <svg
+                viewBox="0 0 71 93"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
+                  stroke="currentColor"
+                  stroke-width="6"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+                <path
+                  d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
+                  stroke="currentColor"
+                  stroke-width="6"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+              <img
+                src="https://fastly.picsum.photos/id/844/200/200.jpg?hmac=blYHTv1EUQA2puhc8O_7gTL4H6Y8FgSmVXDYEJqXWdQ"
+                alt="Generic image description"
+              />
+            </div>
+
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
                 <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
@@ -293,15 +378,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -329,22 +415,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/674/200/200.jpg?hmac=8R8yi_1uaRGCT1W62tjUJFrEyMy2JCZzmrjrXclOens"
+                src="https://fastly.picsum.photos/id/1015/200/200.jpg?hmac=CZwBryoFVJo_ic1ivVDBJGVm0MZDhNMiO5B9KzOMY_Y"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -377,15 +465,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -413,22 +502,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/1040/200/200.jpg?hmac=l5Cp_plxzlfQobWWyd5uqBPiqjX1CApBpWP3w8DzYK0"
+                src="https://fastly.picsum.photos/id/1050/200/200.jpg?hmac=cq2YpkyrMed7ZhJMjcuNfGZtfsZFRhooscxiGkOcgD4"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -461,101 +552,18 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
-
-          <div class="cardLibrary__grid__card">
-            <div class="cardLibrary__grid__card__img">
-              <svg
-                viewBox="0 0 71 93"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                class="cardLibrary__grid__card__watermark"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10 39.2725C6.13401 39.2725 3 42.4065 3 46.2725V49.079C3 52.1558 4.98508 54.769 7.74438 55.7076V64.6762C7.74438 80.162 20.2981 92.7157 35.7839 92.7157C51.2697 92.7157 63.8234 80.162 63.8234 64.6762V55.612C66.4446 54.6005 68.3041 52.0569 68.3041 49.079V46.2725C68.3041 42.4065 65.1701 39.2725 61.3041 39.2725H10ZM27.8766 56.079H22.2052L22.1124 50.079H27.8766V56.079ZM32.6209 56.079H57.8234V64.6762C57.8234 76.8483 47.956 86.7157 35.7839 86.7157C23.6118 86.7157 13.7444 76.8483 13.7444 64.6762V56.079H16.4059L16.3131 50.079H10C9.44772 50.079 9 49.6313 9 49.079V46.2725C9 45.7202 9.44772 45.2725 10 45.2725H61.3041C61.8564 45.2725 62.3041 45.7202 62.3041 46.2725V49.079C62.3041 49.6313 61.8564 50.079 61.3041 50.079H32.6209V56.079Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M38.7837 17.233C38.7837 15.5761 37.4405 14.233 35.7837 14.233C34.1268 14.233 32.7837 15.5761 32.7837 17.233H38.7837ZM38.7837 41.4818V17.233H32.7837V41.4818H38.7837Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M3.89136 3H21.5508C29.4114 3 35.7838 9.37232 35.7838 17.233V17.233H18.1243C10.2637 17.233 3.89136 10.8607 3.89136 3V3Z"
-                  stroke="currentColor"
-                  stroke-width="6"
-                  stroke-linejoin="round"
-                  fill="none"
-                />
-                <path
-                  d="M67.6763 10.1165H50.0168C42.1562 10.1165 35.7839 16.4888 35.7839 24.3495V24.3495H53.4433C61.3039 24.3495 67.6763 17.9771 67.6763 10.1165V10.1165Z"
-                  stroke="currentColor"
-                  stroke-width="6"
-                  stroke-linejoin="round"
-                  fill="none"
-                />
-              </svg>
-              <img
-                src="https://fastly.picsum.photos/id/20/200/200.jpg?hmac=wHmtG3BEC6aOsGZU_Q2wnxVQq34B__t4x4LFw-sptM8"
-              />
-            </div>
-
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
-            <div class="basicPadding cardLibrary__grid__card__content">
-              <header>
-                <h4>Gurka</h4>
-              </header>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
-              </p>
-            </div>
-            <footer class="cardLibrary__grid__card__footer">
-              <svg
-                fill="#000000"
-                width="60px"
-                height="60px"
-                viewBox="0 0 36 30"
-                version="1.1"
-                preserveAspectRatio="xMidYMid meet"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                class="cardAvatar"
-              >
-                <title>avatar-solid</title>
-                <path
-                  d="M30.61,24.52a17.16,17.16,0,0,0-25.22,0,1.51,1.51,0,0,0-.39,1v6A1.5,1.5,0,0,0,6.5,33h23A1.5,1.5,0,0,0,31,31.5v-6A1.51,1.51,0,0,0,30.61,24.52Z"
-                  class="clr-i-solid clr-i-solid-path-1"
-                ></path>
-                <circle
-                  cx="18"
-                  cy="10"
-                  r="7"
-                  class="clr-i-solid clr-i-solid-path-2"
-                ></circle>
-                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
-              </svg>
-              <div>
-                <h6>Coolio</h6>
-                <p>2024-04-01</p>
-              </div>
-            </footer>
-          </div>
+          </article>
 
           <!-- Row 2 -->
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -583,22 +591,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/107/200/200.jpg?hmac=bWV6B7Av2dY7XMiQYnj-0VMJT_fmwttT1Fumzc4Ct7g"
+                src="https://fastly.picsum.photos/id/371/200/200.jpg?hmac=VShu_HdkBA6-hi8lkHlFMbkqxiu0BgA4mvEKoJke228"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -631,15 +641,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -667,22 +678,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/20/200/200.jpg?hmac=wHmtG3BEC6aOsGZU_Q2wnxVQq34B__t4x4LFw-sptM8"
+                src="https://fastly.picsum.photos/id/772/200/200.jpg?hmac=9euSj4JHTPr7uT5QWVmeNJ8JaqAXY8XmJnYfr_DfBJc"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -715,15 +728,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -751,22 +765,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/864/200/200.jpg?hmac=enPW23d2MpTvv2RfL7CtuO_cKSvCg4DGCYtNPc4-48M"
+                src="https://fastly.picsum.photos/id/610/200/200.jpg?hmac=6qOvp5zik0MBH2bc7jzgth7yzkY8IlZXay0WCNF20DM"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -799,15 +815,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -835,22 +852,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/1045/200/200.jpg?hmac=NOMPYGOtm89-zlf7NNDG7qSjCOy3XpvrdQRBF4aUZgE"
+                src="https://fastly.picsum.photos/id/240/200/200.jpg?hmac=PZiJibMUuv5Zpv9MAcqLaCYJOPt-XNuDh3RPBZiGcoY"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -883,17 +902,18 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
           <!-- Row 3 -->
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -921,22 +941,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/433/200/200.jpg?hmac=dBn6DDBngOA94Grm3jfIJNDtv08GorUvB0zMeAw0Jfs"
+                src="https://fastly.picsum.photos/id/417/200/200.jpg?hmac=urRppSmoZMSijmMMM_igfBcmbcTu_y285erBFfY7jE4"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -969,15 +991,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -1005,22 +1028,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/144/200/200.jpg?hmac=3uevqKoBuYGJxqInvMh1R9bfnV2bz-Vetuv5Zwnb3mE"
+                src="https://fastly.picsum.photos/id/793/200/200.jpg?hmac=3DeE830wjdSShKq_h_iFtV_jAxf43FO4xx-sivW0Q_Y"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -1053,15 +1078,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -1089,22 +1115,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/373/200/200.jpg?hmac=WAwyn7yIFXuyUxxF4b3ijw7qJfIP7oBXicnozVoLj_o"
+                src="https://fastly.picsum.photos/id/322/200/200.jpg?hmac=h5_-NQtnn86YBEwVT2_4zcSeuxpCnMAdriBcZchtfas"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -1137,15 +1165,16 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
 
-          <div class="cardLibrary__grid__card">
+          <article class="cardLibrary__grid__card">
             <div class="cardLibrary__grid__card__img">
               <svg
                 viewBox="0 0 71 93"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 class="cardLibrary__grid__card__watermark"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
@@ -1173,22 +1202,24 @@
                 />
               </svg>
               <img
-                src="https://fastly.picsum.photos/id/404/200/200.jpg?hmac=7TesL9jR4uM2T_rW-vLbBjqvfeR37MJKTYA4TV-giwo"
+                src="https://fastly.picsum.photos/id/877/200/200.jpg?hmac=_TafLl6WZhZyakFIYbCsHjkQbQ_aQreI80z-xcPFQIg"
+                alt="Generic image description"
               />
             </div>
 
-            <div class="cardLibrary__grid__card__bubbles">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+            <ul class="cardLibrary__grid__card__bubbles">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="basicPadding cardLibrary__grid__card__content">
               <header>
-                <h4>Gurka</h4>
+                <h4 class="cardLibrary__grid__card__content__title">Gurka</h4>
               </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores nam reprehenderit cupiditate facilis voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nobis nam sapiente suscipit, soluta, voluptatum laboriosam
+                eveniet, repellat excepturi esse nostrum quia assumenda
               </p>
             </div>
             <footer class="cardLibrary__grid__card__footer">
@@ -1221,7 +1252,7 @@
                 <p>2024-04-01</p>
               </div>
             </footer>
-          </div>
+          </article>
         </div>
       </section>
 
