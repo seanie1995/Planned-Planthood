@@ -407,7 +407,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 .register__section__form {
   margin-block-start: 1.5rem;
-  width: 288px;
+  width: min(288px, 100vw);
   border: 1px solid var(--clr-primary-dark);
   border-radius: 2rem;
   padding: 2px;
@@ -518,7 +518,9 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 .cardLibrary__grid__card__content {
   > p {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: clamp(13px, 3vw, 12px);
+
     height: 6rem;
   }
 
@@ -544,7 +546,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   align-items: center;
   margin-block-end: 1rem;
 
-  > div > h6 {
+  > div > h5 {
     color: var(--clr-air);
   }
 }
@@ -643,7 +645,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 500px;
+  width: min(100vw, 500px);
 
   > footer {
     font-weight: var(--fw-700);
