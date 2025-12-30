@@ -227,7 +227,7 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 /*** Utilities ***/
 
-/* .visually-hidden {
+.visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -235,11 +235,9 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
 
-  
-} */
-
-.visually-hidden {
+.skip-link {
   position: absolute;
   top: -40px;
   left: 0;

@@ -23,8 +23,8 @@ const plantCategories = [
 
 function randomHsl() {
   const hue = Math.floor(Math.random() * 360);
-  const saturation = 60;
-  const lightness = 45;
+  const saturation = 70;
+  const lightness = Math.floor(Math.random() * 30) + 20;
 
   return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
