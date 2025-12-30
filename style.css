@@ -526,6 +526,15 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   }
 }
 
+.cardLibrary__grid__card__content__title > a {
+  color: black;
+  font-weight: var(--fw-600);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .cardLibrary__grid__card__footer {
   font-size: 12px;
   padding-inline: 1rem;
@@ -582,10 +591,16 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   }
 
   > div > button {
+    padding-block: 6px;
+    padding-inline: 1rem;
+    border-radius: 2rem;
     background-color: var(--clr-air);
-    padding-block: 4px;
-    padding-inline: 12px;
-    border-radius: 50rem;
+    border: 0;
+    transition: background-color 0.3s ease;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--clr-green-800);
+    }
   }
 }
 
