@@ -348,10 +348,6 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
     margin-block-end: 2rem;
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
-
-  > p {
-    font-size: clamp(14px, 2vw, 1rem);
-  }
 }
 
 .hero__section__header__photos {
