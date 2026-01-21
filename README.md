@@ -1,56 +1,91 @@
-# Inlämningsuppgift Planned Planthood
-Uppgiften är att göra en sida enligt nedanstående bilder, text och kod-stycken.
+# Planned Planthood 
 
-## Inlämning
-* Code review är efter lunch fredagen den 2/1.
-* Senaste tiden för inlämning är kl. 8.00 måndagen den 5/1. Det som kommer efter det bedömmer vi inte om det inte finns rimliga skäl. 
-* Ni lämnar in genom att pusha till er GitHub med namnet "Planned Planthood".
-* När ni pushat upp sista ändringen skriver ni lärarchatten i lärarchatten och meddelar oss med länk till koden. Om ni inte meddelar bedömmer vi den i det skick den är vid deadline, commits efter detta kommer ignoreras.
-  
-## Krav
-* Klona detta repo och använd som grund.
-* Använd de variabler ni anser aktuella av de ni får i style.css som grund för sidans design
-* Ni ska lösa uppgiften enligt den design som anges i bilderna
-* Sidan ska vara responsiv i övergångarna mellan mobil-tablet-desktop
-* Formulär och semantik ska vara tillgängligt (använd WAVE eller dylikt för att testa)
-* Koden ska vara välformatterad och tydligt strukturerad med en genomtänkt namngivning på klasser samt ev kommentarer
-* Inga bibliotek som react, bootstrap, tailwind eller dylikt får användas, endast .CSS och .HTML (ev js).
-* Om ni lånar en reset, flow-util, visually-hidden eller dylikt som inte finns i grundkoden - ange källa som kommentar i er kod.
-* Var beredd på att förklara er kod muntligt så se till att ni förstår vad ni gör om ni rådfrågar andra/AI.
+This project was created as part of a course assignment, with the explicit goal of **going back to basics** in frontend development.
 
-## Extra
-Följande är extra och sådant ni inte måste ha med om ni inte hinner/vill/kan
+Rather than relying on frameworks or libraries, the focus here is on:
+- Writing **clear, semantic HTML**
+- Building **responsive layouts with plain CSS**
+- Developing a **deeper understanding of CSS structure, variables, and layout techniques**
+- Practicing **accessible, well-structured markup**
 
-* Overlay/watermark-bilden med krukan kortens bild
-* Galleriet högst upp kan ha en enklare design som i tablet-läget även på desktop
-* Olika färger på "tags" behövs inte om ni inte vill, använd bara den gröna accent-color på alla i så fall.
-* Använd gärna en diskret transition på hover/focus-visible om ni vill.
-* Hamburgar-menyn behöver ni bara göra som en ikon, all annan funktionalitet är superextra och inget som vi förväntar oss att ni gör!
-  
-## Övriga resurser
-* Använd gärna avatarer från [https://avatar-placeholder.iran.liara.run/avatars](https://avatar-placeholder.iran.liara.run/avatars) eller den svg som finns i projektet.
-* Använd gärna bilder från [https://picsum.photos/](https://picsum.photos/). Vill ni använda andra är det ok, men se till att det ser bra ut i sammanhanget.
-* Vill ni ändra texter och lägga in egen info är det också ok, bara det fyller samma typ av funktion och inte ändrar sidans utseende bortom innehållet.
-* SVG finns i mappen assets/Images och kan användas antingen som vanliga bilder eller direkt inkopierade som HTML i koden. Om ni vill ändra färger med CSS på SVG måste de vara inkopierade inline. Se här för hur man kan ändra färger med CSS: https://nucleoapp.com/blog/post/change-svg-color-css
-* Länkarna ska vara semantiska men behöver inte gå någonstans (använd href="#")
-  
-## Design
-### Desktop
-Bilderna för designen ligger under Design mappen och innehåller bilder för de olika vyerna samt bild för hover state.
+## Purpose of the Project
 
-![Desktop](Design/desktop.png "Desktop")
+After spending a lot of time working with frameworks and abstractions, this project was an opportunity to slow down and reinforce core skills:
 
-### Tablet
-Bilderna för designen ligger under Design mappen och innehåller bilder för de olika vyerna samt bild för hover state.
+- Use semantic elements correctly (`header`, `nav`, `main`, `section`, `article`, `footer`, etc.)
+- Think carefully about document structure and accessibility
+- Rely on CSS fundamentals instead of utility libraries
+- Improve naming conventions and code readability
+- Build responsive layouts without shortcuts
 
-![Tablet](Design/tablet.png "Tablet")
+This was a conscious exercise in **clarity over cleverness**.
 
-### Mobile
-Bilderna för designen ligger under Design mappen och innehåller bilder för de olika vyerna samt bild för hover state.
+## Tech Stack
 
-![Mobile](Design/mobile.png "Mobile")
+- **HTML5**
+- **CSS3**
+- (Optional minimal JavaScript, if present)
 
-## Hover state
-För hover state gäller generellt att det är inverterat om det är annat än länkar. Länkar har understrykning vid hover, annars inte.
+No external libraries or frameworks were used:
+- ❌ React
+- ❌ Bootstrap
+- ❌ Tailwind
+- ❌ CSS frameworks of any kind
 
-![Hover](Design/PlannedPlanthood-Hover.png "Hover")
+## Accessibility & Semantics
+
+Accessibility was treated as a first-class concern:
+
+- Semantic HTML used throughout
+- Logical heading structure
+- Accessible form markup
+- Tested using accessibility tools such as **WAVE**
+- Focus and hover states considered for keyboard navigation
+
+## 📱 Responsive Design
+
+The layout adapts across:
+- **Mobile**
+- **Tablet**
+- **Desktop**
+
+Responsiveness is handled using:
+- CSS variables
+- Media queries
+- Flexible layouts (Flexbox / Grid where appropriate)
+
+## Design Notes
+
+- Design closely follows the provided mockups
+- CSS variables from the provided `style.css` are used as the foundation
+- Hover states follow the provided design rules
+- Transitions are kept subtle and intentional
+- Some optional design elements were simplified where allowed by the assignment
+
+## Assets & Resources
+
+- Placeholder avatars from  
+  https://avatar-placeholder.iran.liara.run/avatars
+- Images from  
+  https://picsum.photos/
+- SVG assets provided with the assignment
+
+All external resources are used purely for visual purposes.
+
+## What I Practiced
+
+- Writing HTML with intent
+- Structuring CSS in a maintainable way
+- Understanding layout behavior instead of trial-and-error
+- Making design decisions within constraints
+- Thinking about accessibility early, not as an afterthought
+
+## Final Notes
+
+This project is not about showing off advanced techniques — it’s about **strengthening fundamentals**.
+
+Being comfortable with the basics makes every higher-level tool easier to understand, debug, and reason about later on.
+
+---
+
+If you have any questions about specific implementation details, I’m happy to explain the reasoning behind them.
